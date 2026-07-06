@@ -7,7 +7,7 @@ properties:
       directives:
         description: Install Python 3.14
         module: Microsoft.WinGet.DSC
-        allowPrerelease: true      
+        allowPrerelease: true
       settings:
         id: Python.Python.3.14
         source: winget
