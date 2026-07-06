@@ -38,3 +38,24 @@ properties:
     - resource: Microsoft.WinGet.DSC/WinGetPackage
       id: rustPackage
       directives:
+        description: Install Rust with MSVC toolchain
+      settings: 
+        id: Rustlang.Rust.MSVC
+        source: winget
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: gitPackage
+      directives:
+        description: Install Git
+        allowPrerelease: true
+      settings:
+        id: Git Git
+        source: winget
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: nasmPackage
+      directives:
+        description: Install NetWide Assembler (NASM)
+        allowPrerelease: true
+      settings:
+        id: Nasm.Nasm
+        source: winget
+  configurationVersion: 0.2.0
