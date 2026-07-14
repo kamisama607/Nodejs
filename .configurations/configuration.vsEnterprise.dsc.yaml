@@ -38,3 +38,8 @@ properties:
     - resource: Microsoft.WinGet.DSC/WinGetPackage
       id: rustPackage
       directives:
+        description: Install Rust with MSVC toolchain
+      settings:
+        id: Rustlang.Rust.MSVC
+        source: winget
+        
